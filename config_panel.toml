@@ -1,8 +1,7 @@
 version = "1.0"
-name= "Armadietto configuration panel"
 
 [main]
-name = "Armadietto signup configuration"
+name = "Armadietto configuration"
 
     [main.is_signup]
     name = "Signup configuration"
@@ -11,6 +10,8 @@ name = "Armadietto signup configuration"
         ask.en = "Allow signups?"
         ask.fr = "Accepter les inscriptions ?"
         type = "boolean"
-        default = true
+        yes = "true"
+        no = "false"
+        bind = ":__FINALPATH__/server.js"
         help.en = "Would you like to allow visitors to register and create an account?"
-        help.fr = "Souhaitez-vous autoriser les visiteurs à s'inscrire et créer un compte ?"    
+        help.fr = "Souhaitez-vous autoriser les visiteurs à s'inscrire et créer un compte ?"
